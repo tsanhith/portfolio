@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="white"/>
+  <g transform="translate(50, 50)">
+    <!-- Black curved left side -->
+    <path d="M 20 10 Q 5 25 20 40 L 35 40 Q 20 25 35 10 Z" fill="#000000"/>
+    <!-- Orange curved bottom right -->
+    <path d="M 35 60 Q 50 75 35 90 L 20 90 Q 35 75 20 60 Z" fill="#FFA500"/>
+    <!-- Gray horizontal line -->
+    <rect x="40" y="32" width="35" height="8" rx="4" fill="#999999"/>
+    <!-- Orange accent top right -->
+    <circle cx="55" cy="20" r="6" fill="#FFA500"/>
+  </g>
+</svg>

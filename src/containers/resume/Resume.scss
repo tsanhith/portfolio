@@ -1,0 +1,74 @@
+.resume-margin-top {
+  margin-top: 2rem;
+}
+
+.resume-div-main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.resume-header {
+  text-align: center;
+}
+
+.resume-title {
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.resume-subtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.resume-button-div {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #55198b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #55198b;
+
+  &:hover {
+    background-color: #8c43ce;
+    border-color: #8c43ce;
+    transform: scale(1.05);
+  }
+
+  &.dark-mode {
+    background-color: #55198b;
+    color: white;
+
+    &:hover {
+      background-color: #8c43ce;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-title {
+    font-size: 30px;
+  }
+
+  .resume-subtitle {
+    font-size: 16px;
+  }
+
+  .resume-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
