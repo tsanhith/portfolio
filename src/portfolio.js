@@ -195,6 +195,22 @@ const bigProjects = {
   projects: [
     {
       image: "",
+      projectName: "Agentic-RAG-Hybrid",
+      projectDesc:
+        "Built a hybrid Retrieval-Augmented Generation app with an agentic workflow to answer user queries with grounded, context-aware responses. The project combines retrieval and reasoning steps in a Streamlit interface to keep outputs practical, reliable, and easy to interact with.",
+      footerLink: [
+        {
+          name: "Live Demo",
+          url: "https://agentic-rag-hybrid.streamlit.app/"
+        },
+        {
+          name: "View on GitHub",
+          url: "https://github.com/tsanhith/Agentic-RAG-Hybrid"
+        }
+      ]
+    },
+    {
+      image: "",
       projectName: "LLM-Powered Prompt Engineering System",
       projectDesc:
         "Built a prompt-driven system that analyzes user profiles and generates personalized suggestions using LLMs. Processed 100+ user profiles, designed 20+ prompt variations, and delivered a working UI using Streamlit. Demonstrates practical ability to leverage LLMs beyond chatbots.",
