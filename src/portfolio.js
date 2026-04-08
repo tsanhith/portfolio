@@ -23,7 +23,7 @@ const greeting = {
   username: "T. Sanhith Reddy",
   title: "Hi all, I'm Sanhith",
   subTitle: emoji(
-    "Aspiring AI / LLM Engineer 🚀 I build practical AI systems using Large Language Models, retrieval-based pipelines, and machine learning. Experienced in turning raw data into working ML and LLM-powered applications."
+    "AI / LLM Engineer 🚀 I design and ship intelligent products end-to-end—from data pipelines and model experimentation to polished user-facing AI experiences. Focused on practical LLM systems, computer vision, and high-impact automation."
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -193,6 +193,18 @@ const bigProjects = {
   title: "Key Projects",
   subtitle: "PRACTICAL AI/ML SYSTEMS WITH REAL-WORLD IMPACT",
   projects: [
+    {
+      image: "",
+      projectName: "Videntia (Flagship Project)",
+      projectDesc:
+        "Built Videntia as a flagship AI project focused on turning complex video content into actionable intelligence. The system emphasizes practical ML execution, clean UX, and real-world usability—showcasing strong ownership from idea to deployable product.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/tsanhith/videntia"
+        }
+      ]
+    },
     {
       image: "",
       projectName: "Agentic-RAG-Hybrid",
