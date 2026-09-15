@@ -185,7 +185,7 @@ const workExperiences = {
     {
       role: "Software Engineer",
       company: "Snypar Technologies Pvt Ltd",
-      companylogo: require("./assets/images/snyparLogo.png"),
+      companylogo: require("./assets/images/snyparLogo.jpeg"),
       date: "May 2026 – Present",
       desc: "Working on a production AI system that automates enterprise support-ticket resolution using a multi-agent LangGraph pipeline (14+ nodes, several conditional routing branches) covering classification, pattern analysis, root-cause analysis, and remediation recommendation.",
       descBullets: [
@@ -294,7 +294,7 @@ const achievementSection = {
       title: "Production AI Engineering at Snypar Technologies",
       subtitle:
         "Building a multi-agent LangGraph pipeline (14+ nodes) for enterprise support-ticket automation — with full Langfuse observability, PII anonymization, and Cloud Foundry deployment. Real production engineering, not a tutorial project.",
-      image: require("./assets/images/snyparLogo.png"),
+      image: require("./assets/images/snyparLogo.jpeg"),
       imageAlt: "Snypar Technologies Logo",
       footerLink: [
         {
