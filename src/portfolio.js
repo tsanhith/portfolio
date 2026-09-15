@@ -390,7 +390,7 @@ const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
   resumeLink:
-    "https://drive.google.com/file/d/12Hgef1LJ3DvAMm8W68VeK0ZqU0AslLeH/view?usp=sharing",
+    "https://drive.google.com/file/d/1tCs5t0HYHgMh2eEIMMHd33_aKYhqJBlZ/view?usp=sharing",
   display: true // Set false to hide this section, defaults to true
 };
 
