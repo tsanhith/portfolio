@@ -23,7 +23,7 @@ const greeting = {
   username: "T. Sanhith Reddy",
   title: "Hi all, I'm Sanhith",
   subTitle: emoji(
-    "AI / LLM Engineer 🚀 I design and ship intelligent products end-to-end—from data pipelines and model experimentation to polished user-facing AI experiences. Focused on practical LLM systems, computer vision, and high-impact automation."
+    "Software Engineer & AI Systems Builder 🚀 B.Tech Data Science & AI (IFHE, 2022–2026), currently working as a Software Engineer. I build applied AI systems: multi-agent pipelines, retrieval-augmented generation, and production ML tooling — not just notebooks, but things deployed and monitored end to end."
   ),
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -49,19 +49,19 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "AI / ML ENGINEER BUILDING PRACTICAL LLM-POWERED SYSTEMS",
+  subTitle: "SOFTWARE ENGINEER BUILDING PRODUCTION AI SYSTEMS",
   skills: [
     emoji(
-      "⚡ Build LLM-powered applications using prompt engineering and retrieval-based pipelines"
+      "⚡ Design and maintain multi-agent LLM pipelines (LangGraph, LangChain) with full observability via Langfuse"
     ),
     emoji(
-      "⚡ Develop deep learning models (CNNs, Neural Networks) for computer vision and NLP tasks"
+      "⚡ Build retrieval-augmented generation systems with hybrid search — BM25, dense embeddings, and vision embeddings"
     ),
     emoji(
-      "⚡ Process and analyze large datasets (10K+ images, 10GB+ video data) for ML readiness"
+      "⚡ Engineer production ML tooling — privacy-preserving pipelines, PII anonymization, monitoring, and cloud deployment"
     ),
     emoji(
-      "⚡ Design ML systems focused on measurable results and real-world applications"
+      "⚡ End-to-end system design from data processing to deployed, monitored applications on Cloud Foundry and HF Spaces"
     )
   ],
 
@@ -70,8 +70,16 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "SQL",
+      fontAwesomeClassname: "fas fa-database"
     },
     {
       skillName: "TensorFlow",
@@ -82,36 +90,44 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-cube"
     },
     {
-      skillName: "Hugging Face",
-      fontAwesomeClassname: "fas fa-face-smile"
+      skillName: "LangChain",
+      fontAwesomeClassname: "fas fa-link"
+    },
+    {
+      skillName: "LangGraph",
+      fontAwesomeClassname: "fas fa-project-diagram"
+    },
+    {
+      skillName: "FastAPI",
+      fontAwesomeClassname: "fas fa-bolt"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
     },
     {
       skillName: "OpenCV",
       fontAwesomeClassname: "fas fa-image"
     },
     {
-      skillName: "Streamlit",
-      fontAwesomeClassname: "fas fa-chart-line"
+      skillName: "Hugging Face",
+      fontAwesomeClassname: "fas fa-face-smile"
     },
     {
-      skillName: "Pandas",
-      fontAwesomeClassname: "fas fa-table"
+      skillName: "FAISS",
+      fontAwesomeClassname: "fas fa-search"
     },
     {
-      skillName: "NumPy",
-      fontAwesomeClassname: "fas fa-calculator"
+      skillName: "ChromaDB",
+      fontAwesomeClassname: "fas fa-layer-group"
     },
     {
-      skillName: "Scikit-learn",
-      fontAwesomeClassname: "fas fa-cogs"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "GitHub",
+      skillName: "GitHub Actions",
       fontAwesomeClassname: "fab fa-github"
+    },
+    {
+      skillName: "Langfuse",
+      fontAwesomeClassname: "fas fa-chart-bar"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -124,12 +140,12 @@ const educationInfo = {
   schools: [
     {
       schoolName: "IFHE (Institute For Higher Education)",
-      logo: "",
+      logo: require("./assets/images/ifheLogo.svg"),
       subHeader: "B.Tech in Data Science & Artificial Intelligence",
-      duration: "Currently Enrolled",
-      desc: "Hands-on experience building LLM-powered applications, computer vision systems, and ML pipelines",
+      duration: "2022 – 2026",
+      desc: "Finishing degree while working as a Software Engineer — building applied AI systems in production",
       descBullets: [
-        "Focus on clean logic, measurable results, and systems that actually work",
+        "Focus on multi-agent systems, retrieval-augmented generation, and production ML tooling",
         "Strong foundation in Data Structures & Algorithms, ML theory, and practical implementation"
       ]
     }
@@ -142,16 +158,20 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "LLM & NLP Systems", //Insert stack or technology you have experience in
-      progressPercentage: "70%" //Insert relative proficiency in percentage
+      Stack: "Multi-Agent LLM Pipelines (LangGraph, LangChain)",
+      progressPercentage: "85%"
     },
     {
-      Stack: "Deep Learning (CNNs, TensorFlow, PyTorch)",
+      Stack: "RAG & Retrieval Systems (FAISS, ChromaDB)",
       progressPercentage: "80%"
     },
     {
-      Stack: "Data Processing & ML Pipelines",
+      Stack: "Production ML & Observability (Langfuse, FastAPI)",
       progressPercentage: "75%"
+    },
+    {
+      Stack: "Deep Learning (TensorFlow, PyTorch)",
+      progressPercentage: "70%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -163,16 +183,28 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Aspiring AI/ML Engineer",
+      role: "Software Engineer",
+      company: "Snypar Technologies Pvt Ltd",
+      companylogo: require("./assets/images/snyparLogo.png"),
+      date: "May 2026 – Present",
+      desc: "Working on a production AI system that automates enterprise support-ticket resolution using a multi-agent LangGraph pipeline (14+ nodes, several conditional routing branches) covering classification, pattern analysis, root-cause analysis, and remediation recommendation.",
+      descBullets: [
+        "Built and maintained individual pipeline nodes and their routing logic in a 14+ node LangGraph system",
+        "Instrumented full observability using Langfuse — trace-level visibility into every production run, debugging node-level failures and verifying auth/approval flows end to end",
+        "Implemented data-privacy safeguards ahead of LLM inference — PII anonymization on large payloads with chunked processing, plus Python tooling to verify anonymization coverage against live traces",
+        "Ran structured smoke/break-testing on Cloud Foundry–hosted production service: health checks, RBAC, approval-authorization flows — surfaced and documented real defects with clean reproduction evidence"
+      ]
+    },
+    {
+      role: "AI/ML Trainee",
       company: "360DigiTMG",
-      companylogo: "",
+      companylogo: require("./assets/images/digiTMGLogo.svg"),
       date: "Jun 2024 – Aug 2024",
       desc: "Built production-style ML and LLM-powered systems at a leading AI/ML training institute in Hyderabad",
       descBullets: [
         "Curated and validated 10,000+ images for CNN training on facial recognition and drowsiness detection",
         "Conducted 15+ model experiments to improve accuracy and performance metrics",
         "Built LLM-powered prompt engineering system using Hugging Face for personalized task automation",
-        "Designed 20+ prompt templates and evaluated output quality for relevance and consistency",
         "Processed 10GB+ video datasets for ML readiness and data pipeline optimization"
       ]
     }
@@ -191,13 +223,25 @@ const openSource = {
 
 const bigProjects = {
   title: "Key Projects",
-  subtitle: "PRACTICAL AI/ML SYSTEMS WITH REAL-WORLD IMPACT",
+  subtitle: "PRODUCTION AI SYSTEMS WITH REAL-WORLD IMPACT",
   projects: [
     {
-      image: "",
-      projectName: "Videntia (Flagship Project)",
+      image: require("./assets/images/videntia_hero.png"),
+      projectName: "Videntia: Multimodal Video Intelligence Pipeline",
       projectDesc:
-        "Built Videntia as a flagship AI project focused on turning complex video content into actionable intelligence. The system emphasizes practical ML execution, clean UX, and real-world usability—showcasing strong ownership from idea to deployable product.",
+        "A system that lets you ask complex, natural-language questions about long-form video and get back grounded, evidence-cited answers. Architecture: a 4-agent LangGraph pipeline — Lead Detective (query decomposition), Retriever (hybrid BM25 + dense + vision search), Verifier (evidence cross-checking), and Report Generator (temporally-aware synthesis). Achieved 63% latency reduction (8 min → 3 min per hour of video) and 94% retrieval accuracy via emotion-aware boosting and intelligent caching. Deployed live on Hugging Face Spaces and Vercel.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/tsanhith/videntia"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/videntia_architecture.png"),
+      projectName: "Videntia — 4-Agent Architecture",
+      projectDesc:
+        "Lead Detective → Retriever → Verifier → Report Generator. Hybrid retrieval combining BM25 (keyword), dense text embeddings (semantic), and vision embeddings, fused with cross-encoder reranking — finds relevant moments whether the query matches spoken words, meaning, or visual content.",
       footerLink: [
         {
           name: "View on GitHub",
@@ -207,9 +251,9 @@ const bigProjects = {
     },
     {
       image: "",
-      projectName: "Agentic-RAG-Hybrid",
+      projectName: "Agentic RAG Hybrid System",
       projectDesc:
-        "Built a hybrid Retrieval-Augmented Generation app with an agentic workflow to answer user queries with grounded, context-aware responses. The project combines retrieval and reasoning steps in a Streamlit interface to keep outputs practical, reliable, and easy to interact with.",
+        "An autonomous router that dynamically switches between local FAISS retrieval, live Tavily web search, and a chat fallback, with explicit validation to cut down hallucinations. Handles compound questions by decomposing them and resolving conversational pronouns before retrieval. Built with Python, LangChain, Groq, FAISS, Tavily, and Streamlit.",
       footerLink: [
         {
           name: "Live Demo",
@@ -223,33 +267,9 @@ const bigProjects = {
     },
     {
       image: "",
-      projectName: "LLM-Powered Prompt Engineering System",
+      projectName: "SVD Interactive Image Compression",
       projectDesc:
-        "Built a prompt-driven system that analyzes user profiles and generates personalized suggestions using LLMs. Processed 100+ user profiles, designed 20+ prompt variations, and delivered a working UI using Streamlit. Demonstrates practical ability to leverage LLMs beyond chatbots.",
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/tsanhith"
-        }
-      ]
-    },
-    {
-      image: "",
-      projectName: "Drowsiness Detection System",
-      projectDesc:
-        "Developed a real-time eye-state classification system using CNNs with TensorFlow/Keras. Curated and cleaned 10,000+ facial images, trained and evaluated models across 15+ experiments, applied image preprocessing and augmentation techniques for real-world detection scenarios.",
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/tsanhith"
-        }
-      ]
-    },
-    {
-      image: "",
-      projectName: "AI-Based Traffic Management System (SIH 2024)",
-      projectDesc:
-        "Designed an adaptive traffic signal prototype using computer vision and video data analysis. Shortlisted for Smart India Hackathon 2024 Phase 2. Built logic for dynamic traffic signal control with focus on real-world feasibility and scalability.",
+        "Image compression via Singular Value Decomposition achieving 75% file-size reduction at 90% SSIM. Features an interactive rank-selection tool and energy-based auto-tuning for optimal quality-size tradeoffs. Built with Python, NumPy, and Streamlit.",
       footerLink: [
         {
           name: "View on GitHub",
@@ -267,9 +287,35 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements 🏆 "),
   subtitle:
-    "Selected for smart India Hackathon 2024, Strong competitive programming background, Internship-grade proof of ML systems",
+    "Production AI engineering, deployed multimodal systems, and national-level hackathon selection",
 
   achievementsCards: [
+    {
+      title: "Production AI Engineering at Snypar Technologies",
+      subtitle:
+        "Building a multi-agent LangGraph pipeline (14+ nodes) for enterprise support-ticket automation — with full Langfuse observability, PII anonymization, and Cloud Foundry deployment. Real production engineering, not a tutorial project.",
+      image: require("./assets/images/snyparLogo.png"),
+      imageAlt: "Snypar Technologies Logo",
+      footerLink: [
+        {
+          name: "Company",
+          url: "https://snypar.com"
+        }
+      ]
+    },
+    {
+      title: "Videntia — Deployed Multimodal Video Intelligence",
+      subtitle:
+        "4-agent pipeline achieving 63% latency reduction and 94% retrieval accuracy. Deployed live on Hugging Face Spaces and Vercel — a real, runnable demo, not just a repo.",
+      image: require("./assets/images/videntia_hero.png"),
+      imageAlt: "Videntia Project",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/tsanhith/videntia"
+        }
+      ]
+    },
     {
       title: "Smart India Hackathon 2024 - Phase 2",
       subtitle:
@@ -279,33 +325,6 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Project",
-          url: "https://github.com/tsanhith"
-        }
-      ]
-    },
-    {
-      title: "LLM System Development",
-      subtitle:
-        "Built production-style LLM systems with prompt engineering and evaluation. Demonstrates ability to leverage LLMs pragmatically for practical tasks.",
-      image: "",
-      imageAlt: "LLM Systems Logo",
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/tsanhith"
-        }
-      ]
-    },
-
-    {
-      title: "Data Science Experience",
-      subtitle:
-        "Completed AI/ML program at 360DigiTMG working with 10K+ images and 10GB+ video datasets. Built end-to-end ML pipelines and LLM systems.",
-      image: "",
-      imageAlt: "Internship Logo",
-      footerLink: [
-        {
-          name: "Experience Details",
           url: "https://github.com/tsanhith"
         }
       ]
@@ -378,7 +397,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Currently looking for AI / ML / LLM internship opportunities. Let's discuss practical ML systems and RAG workflows.",
+    "Software Engineer building production AI systems. Open to collaborations on applied ML, multi-agent systems, and retrieval pipelines.",
   number: "+91-XXXXXXXXXX",
   email_address: "sanhith6@gmail.com"
 };
